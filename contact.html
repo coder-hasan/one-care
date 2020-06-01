@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Main</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <!-- <script src="assets/js/3ts2ksMwXvKRuG480KNifJ2_JNM.js"></script> -->
+    <link rel="icon" href="assets/images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/mailform.css"/>
+    <link rel="stylesheet" href="assets/css/rd-mailform.css">
+    <link rel="stylesheet" href="assets/css/camera.css"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <link rel="stylesheet" href="assets/css/material-design.css"/> -->
+
+    <link href='https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&family=Dorsa&family=Open+Sans:wght@300;400&display=swap' rel='stylesheet' type='text/css'>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.js"></script>
+
+   <!--[if lt IE 10]>
+    <div style='background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;'>
+        <a href="https://windows.microsoft.com/en-US/internet-explorer/..">
+            <img src="assets/images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820"
+                 alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
+        </a>
+    </div>
+    <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <script src='assets/js/device.min.js'></script>
+</head>
+<body>
+<div class="page subpage">
+    <!--========================================================
+                              HEADER
+    =========================================================-->
+    <header>
+        <div id="stuck_container" class="stuck_container isStuck">
+            <div class="container">
+                <div class="brand">
+                    <h1 class="brand_name">
+                        <a href="./">
+                            <img src="assets/images/onco-logo.png" alt="">
+                            <img src="assets/images/logo2.png" alt="">
+                        </a>
+                    </h1>
+                </div>
+    
+                <nav class="nav">
+                    <ul class="sf-menu" data-type="navbar">
+                        <li>
+                            <a href="index.html">Welkom</a>
+                            <ul>
+                                <li>
+                                    <a href="patient.html">Ik ben patiënt</a>
+                                </li>
+                                <li>
+                                    <a href="zorgverlener.html">Ik ben zorgverlener</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="locaties.html">Locaties</a>
+                            
+                        </li>
+                        <li>
+                            <a href="oncocareevent.html">Event</a>
+                        </li>
+                        <li class="active">
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="container"></div>
+        <!-- <div class="subpage_header_figure"></div> -->
+    
+        <!-- <div class="header_image"></div> -->
+    </header>
+
+    <!--========================================================
+                              CONTENT
+    =========================================================-->
+    <main>
+        <section class="page_header contact">
+            <div class="container">
+                <div class=" banner_3">
+                    <div class="row">
+                        <!-- <div class="col-sm-4 ">
+                            <span class="fa fa-mobile"></span><p class="banner_3_wrap "><a  href="callto:#">+1 800 559 6580</a></p>
+                        </div> -->
+                        <div class="col-sm-6 ">
+                            <span class="fa fa-map-marker"></span>
+                            <p class="banner_3_wrap"><a href="#">Nassaustraat 45 <br> 2161 RJ Lisse</a></p>
+                        </div>
+                        <div class="col-sm-6 ">
+                            <p class="banner_3_wrap" ><span class="fa fa-envelope"></span><a href="mailto:#"> info@oncocarecentrum.nl</a></p>
+                            <p class="banner_3_wrap" ><span class="fa fa-mobile"></span><a href="mailto:#"> 0252 426338</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--section1-->
+
+        <!--section3-->
+        <section class="parallax_after well_6">
+            <div class="container center">
+
+                <form class='rd-mailform psd_contact' method="post" action="bat/rd-mailform.php">
+                    <input type="hidden" name="form-type" value="contact"/>
+                    <fieldset>
+                        <label data-add-placeholder>
+                            <input type="text"
+                                   name="name"
+                                   placeholder="Name"
+                                   data-constraints="@LettersOnly @NotEmpty"/>
+                        </label>
+
+                        <label data-add-placeholder>
+                            <input type="text"
+                                   name="email"
+                                   placeholder="Email"
+                                   data-constraints="@NotEmpty @Email"/>
+                        </label>
+
+                        <label data-add-placeholder>
+                            <input type="text"
+                                   name="phone"
+                                   placeholder="Phone"
+                                   data-constraints="@Phone"/>
+                        </label>
+
+
+                        <label data-add-placeholder>
+                            <textarea name="message" placeholder="Additional Notes"
+                                data-constraints="@NotEmpty"></textarea>
+                        </label>
+
+                        <div class="mfControls text-center text-sm-left">
+                            <button class="btn btn-md btn-primary-variant-1" type="submit">Versturen</button>
+                        </div>
+                        <div class="mfInfo"></div>
+                    </fieldset>
+                </form>
+            </div>
+
+        </section>
+        <!--END section3-->
+    </main>
+
+
+    <!--========================================================
+                              FOOTER
+    =========================================================-->
+    <footer class="text-center text-sm-left">
+        <div class="footer_figure_left"></div>
+        <div class="footer_figure_right"></div>
+        <div class="container psd_footer">
+            <div class="row">
+                <div class="col-sm-7 social_icon">
+                    <ul class="footer-list">
+                        <li>
+                            <a href="#" class="fa fa-facebook"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="fa fa-linkedin"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="fa fa-instagram"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                   <!--address-->
+                    <address>
+                        <p>OncoCare Centrum <br>
+                            Nassaustraat 45 <br>
+                            2161 RJ Lisse</p>
+                        <dl>
+                            <dt><span class="envelope"></span></dt>
+                            <dd><a href="mailto:#">info@oncocarecentrum.nl</a></dd>
+                        </dl>
+                        <p>0252 426338</p>
+                    </address>
+                    <!--END address-->
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!-- <script src="assets/js/jquery.cookie.js"></script> -->
+<script src="assets/js/jquery.easing.1.3.js"></script>
+<script src="assets/js/pointer-events.js"></script>
+<script src="assets/js/tmstickup.js"></script>
+<script src="assets/js/jquery.ui.totop.js"></script>
+<script src="assets/js/jquery.equalheights.js"></script>
+<script src="assets/js/superfish.js"></script>
+<script src="assets/js/jquery.rd-navbar.js"></script>
+<script src="assets/js/jquery.form.min.js"></script>
+<script src="assets/js/jquery.rd-mailform.min.js"></script>
+<script src="assets/js/jquery.mobile.customized.min.js"></script>
+<script src="assets/js/camera.js"></script>
+<script src="assets/js/jquery.rd-parallax.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
